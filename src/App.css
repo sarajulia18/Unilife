@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+--light-blue: #00A2E1;
+--dark-blue: #3A5295;
+--white: #fff;
+--black: #000;
+--transparent-bg: rgba(0,0,0,0.5);
+--backdrop-filter:blur(2px);
+--header-height:60px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* body{
+    background-color: var(--white);
+} */
