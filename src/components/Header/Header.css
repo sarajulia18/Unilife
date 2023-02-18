@@ -6,5 +6,7 @@
     width:1440px;
 }
 .img-container{
-    background-image: url(src/assets/cover-img.png);
+    background-image: url("../../assets/cover-img.png");
+    background-position: center;
+    background-size: cover;
 }
