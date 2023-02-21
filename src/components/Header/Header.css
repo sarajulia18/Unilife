@@ -5,8 +5,11 @@
     top:-1px;
     width:1440px;
 }
-.img-container{
-    background-image: url("../../assets/cover-img.png");
-    background-position: center;
-    background-size: cover;
+.site-name{
+    position: absolute;
+width: 102.19px;
+height: 21.94px;
+left: 132.81px;
+top: 20.14px;
+color:#fff;
 }

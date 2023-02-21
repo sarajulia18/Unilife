@@ -4,9 +4,8 @@ import "./Header.css";
 export default function Header() {
   return (
     <div className="header-container">
-      <div className="img-container">
-        <h1>hello</h1>
-      </div>
+      <img src="assets/vector.svg"></img>
+      <h3 className="site-name">UniLife</h3>
     </div>
   );
 }

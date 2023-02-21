@@ -1,12 +1,16 @@
-import React from 'react';
+import React from "react";
 import "./styles.css";
 
-import Overlay from '../components/Overlay/Overlay';
+import CityCards from "../components/CityCards/CityCards";
+import Overlay from "../components/Overlay/Overlay";
 
-export default function HomePage({apiKey, baseUrl}) {
+export default function HomePage() {
   return (
-    <div className='homepage-container'>
-      <Overlay apiKey={apiKey} baseUrl={baseUrl} />
+    <div className="homepage-container">
+      <Overlay
+        headingText={"Find student homes with bills included"}
+        paraText={"A simple and faster way to search for student accommodation"}
+      />
     </div>
-  )
+  );
 }
