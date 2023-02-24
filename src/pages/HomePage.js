@@ -3,6 +3,7 @@ import "./styles.css";
 
 import CityCards from "../components/CityCards/CityCards";
 import Overlay from "../components/Overlay/Overlay";
+import Compare from "../components/Compare/Compare";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,8 @@ export default function HomePage() {
         headingText={"Find student homes with bills included"}
         paraText={"A simple and faster way to search for student accommodation"}
       />
+      <CityCards />
+      <Compare />
     </div>
   );
 }

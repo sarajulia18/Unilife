@@ -2,12 +2,13 @@
     height:var(--header-height);
     background-color: var(--light-blue);
     position:fixed;
-    top:-1px;
-    width:1440px;
+    top:0;
+    width:100%;
+    z-index:100;
 }
 .site-name{
     position: absolute;
-width: 102.19px;
+width: 0;
 height: 21.94px;
 left: 132.81px;
 top: 20.14px;
