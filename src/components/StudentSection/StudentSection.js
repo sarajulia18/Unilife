@@ -10,9 +10,9 @@ export default function StudentSection({ cityInfo }) {
             <div className="row card-body-one m-auto">
               <div className="col">
                 <h5 className="card-title">
-                  Being a student in {cityInfo.name}
+                  Being a student in {cityInfo?.name}
                 </h5>
-                <p className="card-text">{cityInfo.student_life}</p>
+                <p className="card-text">{cityInfo?.student_life}</p>
               </div>
             </div>
           </div>
