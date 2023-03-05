@@ -1,0 +1,14 @@
+.see-all-city-container{
+    max-width: 100%;;
+}
+.see-all-city-card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.see-all-city-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }

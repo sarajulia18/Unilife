@@ -1,0 +1,28 @@
+.card-container{
+    width:400px;
+   height: 250px;
+   object-fit: cover;
+   position: relative;
+   border-radius: 15%;
+   margin:15px;
+}
+.card-img-overlay{
+    border-radius: 15%;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    background-color: rgba(0,0,0,0.5);
+    z-index:10;
+}
+
+.card-title{
+    font-size: 35px;
+    font-weight: bold;
+}
+.card-text{
+    font-size: 15px;
+}
+

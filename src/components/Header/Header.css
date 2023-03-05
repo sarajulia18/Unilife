@@ -5,12 +5,34 @@
     top:0;
     width:100%;
     z-index:100;
+    display: flex;
+    justify-content: flex-start;
+}
+img{
+    padding-right: 10%;
 }
 .site-name{
     position: absolute;
-width: 0;
-height: 21.94px;
-left: 132.81px;
-top: 20.14px;
-color:#fff;
+    display: flex;
+    width: 0;
+    margin: 15px 0 0 10%;
+    color:#fff;
+}
+
+.header-list{
+    width: 100%;
+    display:flex;
+    justify-content: flex-end;
+
+    color:#fff;
+    margin: 15px 5% 0 0;
+   
+}
+
+.header-list img{
+    padding-right: 0;
+    width:15px;
+    height:15px;
+    margin-top:5px;
+
 }

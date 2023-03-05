@@ -23,9 +23,15 @@ export default function App() {
           path="/"
           element={<HomePage apiKey={apiKey} baseUrl={baseUrl} />}
         />
-        <Route path="/seeallcities/" element={<SeeAllCities />} />
-        <Route path="/citydetails/:cityid" element={<CityDetails />} />
-        <Route path="/homedetail/" element={<HomeDetail />} />
+        <Route
+          path="/seeallcities/"
+          element={<SeeAllCities apiKey={apiKey} baseUrl={baseUrl} />}
+        />
+        <Route
+          path="/citydetails/:cityid/:bedrooms?"
+          element={<CityDetails />}
+        />
+        <Route path="/homedetail/:propertyId" element={<HomeDetail />} />
         <Route path="/bookviewingmodal/" element={<BookViewingModal />} />
         <Route path="contactusmodal/" element={<ContactUsModal />} />
       </Routes>

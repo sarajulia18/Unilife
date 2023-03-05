@@ -1,0 +1,21 @@
+.container{
+    
+}
+.search-box{
+    margin-left:40px;
+    border: 2px solid white;
+    width: 90%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+    
+}
+.select-container{
+    display:flex;
+    justify-content: space-around;
+    max-width: 70%;
+    margin:25px 0 25px 13%;
+}
+.search-city,
+.num-bedroom{
+    padding-left:15px;
+}

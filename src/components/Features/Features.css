@@ -1,0 +1,9 @@
+.left-feature{
+display: flex;
+flex-direction: column;
+justify-content: center;
+line-height: 20px;
+}
+.right-feature img{
+height:400px;
+}

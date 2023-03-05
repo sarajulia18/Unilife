@@ -1,9 +1,6 @@
-import React from 'react'
+import React from "react";
+import axios from "axios";
 
 export default function HomeDetail() {
-  return (
-    <div>
-      HomeDetail
-    </div>
-  )
+  return <div>HomeDetail</div>;
 }
