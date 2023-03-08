@@ -5,7 +5,7 @@ import Overlay from "../components/Overlay/Overlay";
 import HomeSearch from "../components/HomeSearch/HomeSearch";
 import CityHomeCards from "../components/CityHomeCards/CityHomeCards";
 import Compare from "../components/Compare/Compare";
-import Features from "../components/Features/Features";
+import HomeFeatures from "../components/HomeFeatures/HomeFeatures";
 
 export default function HomePage() {
   const [cities, setCities] = useState([]);
@@ -32,7 +32,7 @@ export default function HomePage() {
       />
       <CityHomeCards cities={cities} />
       <Compare />
-      <Features />
+      <HomeFeatures />
     </div>
   );
 }

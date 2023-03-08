@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import HomeCard from "../HomeCard/HomeCard";
 import "./CityHomeCards.css";
@@ -12,20 +13,21 @@ export default function CityHomeCards({ cities }) {
           <h2>Student accommodations in our top cities</h2>
         </div>
       </div>
+
       <div className="city-cards">
         {truncatedCities?.map((city) => (
           <HomeCard city={city} />
         ))}
       </div>
       <div className="see-all-cities-btn mt-4">
-        <button
+        <Link
           type="button"
           className="btn btn-primary"
           data-bs-toggle="button"
-          onClick=""
+          to="/seeallcities"
         >
           See All Cities
-        </button>
+        </Link>
       </div>
     </div>
   );

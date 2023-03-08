@@ -12,10 +12,14 @@ export default function Header() {
         <h3>UniLife</h3>
       </div>
       <ul className="header-list">
-        <img src={SmallHeart} alt="small heart" />
-        <li>Shortlist</li>
-        <img src={Email} alt="email envelope" />
-        <li>Contact Us</li>
+        <div className="shortlist-option">
+          <img src={SmallHeart} alt="small heart" />
+          <li>Shortlist</li>
+        </div>
+        <div className="contact-option">
+          <img src={Email} alt="email envelope" />
+          <li>Contact Us</li>
+        </div>
       </ul>
     </div>
   );

@@ -3,7 +3,7 @@ import Students from "../../assets/students.png";
 
 export default function StudentSection({ cityInfo }) {
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="row m-auto">
         <div className="col-12 col-md-6 left-feature">
           <div className="card">

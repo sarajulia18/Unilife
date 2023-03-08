@@ -29,18 +29,26 @@ export default function CityDetails() {
   }, []);
 
   return (
-    <div>
-      <div className="citydetails-container">
-        <Overlay
-          headingText={"Search Accommodation"}
-          paraText={
-            "Whatever you're after, we can help you find the right student accommodation for you"
-          }
-        />
-        <PropertySearch />
-        <PropertyCards properties={properties} />
-        <StudentSection cityInfo={city} />
-      </div>
+    <div className="citydetails-container">
+      <Overlay
+        headingText={"Search Accommodation"}
+        paraText={
+          "Whatever you're after, we can help you find the right student accommodation for you"
+        }
+      />
+      <PropertySearch
+        properites={properties}
+        bedroomInput={"Any bedroom"}
+        bathroomInput={"Any bathroom"}
+        priceInput={"Any price"}
+        typeInput={"Any type"}
+      />
+      <PropertyCards
+        properties={properties}
+        cityInfo={city}
+        propertyCount={properties}
+      />
+      <StudentSection cityInfo={city} />
     </div>
   );
 }

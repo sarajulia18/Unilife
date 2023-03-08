@@ -5,11 +5,10 @@
     top:0;
     width:100%;
     z-index:100;
-    display: flex;
-    justify-content: flex-start;
 }
-img{
-    padding-right: 10%;
+.site-name img{
+    padding-right: 15px;
+    padding-bottom: 10px;
 }
 .site-name{
     position: absolute;
@@ -23,16 +22,32 @@ img{
     width: 100%;
     display:flex;
     justify-content: flex-end;
-
     color:#fff;
-    margin: 15px 5% 0 0;
-   
-}
+    margin: 15px 0 0 0;
+   }
 
 .header-list img{
     padding-right: 0;
     width:15px;
     height:15px;
     margin-top:5px;
+}
+.shortlist-option{
+    display:flex;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
 
+.shortlist-option img{
+    margin-right: 10px;
+}
+
+.contact-option{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.contact-option img{
+    margin-right: 10px;
 }

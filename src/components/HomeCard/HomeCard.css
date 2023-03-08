@@ -1,4 +1,4 @@
-.card-container{
+.homecard-container{
     width:400px;
    height: 250px;
    object-fit: cover;
@@ -6,7 +6,7 @@
    border-radius: 15%;
    margin:15px;
 }
-.card-img-overlay{
+.home-card-img-overlay{
     border-radius: 15%;
     color:white;
     display:flex;

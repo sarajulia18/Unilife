@@ -1,11 +1,11 @@
 import React from "react";
-import "./Features.css";
+import "./HomeFeatures.css";
 
 import HandHome from "../../assets/hand&home.png";
 import Heart from "../../assets/large-heart.png";
 import ManText from "../../assets/person.png";
 
-export default function Features() {
+export default function HomeFeatures() {
   return (
     <div className="container">
       <div className="row m-auto">

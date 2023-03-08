@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./HomeSearch.css";
 
@@ -24,8 +24,8 @@ export default function HomeSearch({ cities, cityInput, numRoomInput, e }) {
     navigate(hyperRef);
   };
   return (
-    <div className="container">
-      <div className="search-box">
+    <div className="home-search-container">
+      <div className="home-search-box">
         <div className="select-container">
           <select
             onChange={changeCity}

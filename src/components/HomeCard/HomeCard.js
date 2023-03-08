@@ -16,8 +16,8 @@ export default function Card({ city }) {
   };
   return (
     <Link to={`/citydetails/${city._id}`}>
-      <div className="card-container" style={imgStyle}>
-        <div className="card-img-overlay text-center">
+      <div className="home-card-container" style={imgStyle}>
+        <div className="home-card-img-overlay text-center">
           <h5 className="card-title">{city.name}</h5>
           <p className="card-text">{city.property_count} properties</p>
         </div>

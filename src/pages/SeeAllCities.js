@@ -3,7 +3,7 @@ import "./styles.css";
 import axios from "axios";
 
 import Overlay from "../components/Overlay/Overlay";
-import SearchCityCards from "../components/SearchCityCards/SearchCityCards";
+import SeeAllCards from "../components/SeeAllCards/SeeAllCards";
 
 export default function SeeAllCities() {
   const [cities, setCities] = useState([]);
@@ -24,7 +24,7 @@ export default function SeeAllCities() {
           "UniLife have student accommodation available across the UK. Whatever you're after, we can help you find the right student accommodation for you"
         }
       />
-      <SearchCityCards cities={cities} />
+      <SeeAllCards cities={cities} />
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.property-card-container{
+    display:flex;
+    flex-direction: column;
+}
+.property-card-title{
+    display: flex;
+    justify-content: flex-start;
+    width:100%
+}
+.property-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
