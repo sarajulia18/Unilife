@@ -30,15 +30,15 @@ export default function PropertySearch({
           <label for="min-bedroom">Min Bedroom</label>
           <select
             onChange={changeMinBedrooms}
-            className="col-2 m-auto min-bedroom text-muted bg-light"
+            className="col-2 min-bedroom text-muted bg-light"
           >
             <option>{bedroomCount}</option>
-            {/* {bedroomCount?.map((item) => (
-              <option value={item._id}>{item.name}</option>
-            ))} */}
+            {bedroomCount?.map((properties) => (
+              <option value={properties._id}>{properties.bedroom_count}</option>
+            ))}
           </select>
         </div>
-        <div className="col-2 m-auto select-container bathroom">
+        <div className="col-2 select-container bathroom">
           <label for="min-bathroom">Min Bathroom</label>
           <select
             onChange={changeMinBathrooms}
@@ -48,27 +48,27 @@ export default function PropertySearch({
             {}
           </select>
         </div>
-        <div className="col-2 m-auto select-container max-price">
+        <div className="col-2 select-container max-price">
           <label for="max-price">Max Price</label>
           <select
             onChange={changeMaxPrice}
             className="max-price text-muted bg-light"
           >
             <option>{bedroomPrices}</option>
-            {/* {cities?.map((item) => (
-              <option value={item._id}>{item.name}</option>
+            {/* {cities?.map((properties) => (
+              <option value={properties._id}>{properties.name}</option>
             ))} */}
           </select>
         </div>
-        <div className="col-2 m-auto select-container home-type">
+        <div className="col-2 select-container home-type">
           <label for="home-type">Home Type</label>
           <select
             onChange={changeHomeType}
             className="home-type text-muted bg-light"
           >
             <option>{propertyType}</option>
-            {/* {cities?.map((item) => (
-              <option value={item._id}>{item.name}</option>
+            {/* {cities?.map((properties) => (
+              <option value={properties._id}>{properties.name}</option>
             ))} */}
           </select>
         </div>

@@ -1,4 +1,5 @@
-.homecard-container{
+.home-card-container{
+    border: red 2px solid;
     width:400px;
    height: 250px;
    object-fit: cover;
@@ -7,6 +8,7 @@
    margin:15px;
 }
 .home-card-img-overlay{
+    border: blue 2px solid;
     border-radius: 15%;
     color:white;
     display:flex;
