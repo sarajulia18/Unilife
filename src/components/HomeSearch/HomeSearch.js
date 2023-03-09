@@ -45,7 +45,7 @@ export default function HomeSearch({ cities, cityInput, numRoomInput, e }) {
           </select>
           <button
             type="button"
-            className="btn btn-primary"
+            className="home-search-btn"
             data-bs-toggle="button"
             onClick={searchHomes}
           >

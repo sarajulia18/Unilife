@@ -3,14 +3,14 @@ import React from "react";
 import PropertyDetailsCard from "../PropertyDetailsCard/PropertyDetailsCard";
 import "./PropertyCards.css";
 
-export default function PropertyCards({ properties, cityInfo, propertyCount }) {
+export default function PropertyCards({ properties, cityInfo }) {
   const truncatedCities = properties.slice(0, 9);
   return (
-    <div className="property-card-container mt-5 text-center">
-      <div className="row m-auto mb-5 text-center property-card-title">
+    <div className="property-cards-container text-center">
+      <div className="row m-auto mb-4 text-center property-card-title">
         <div className="col-12 col-md-6 col-lg-4">
           <h2>
-            {propertyCount?.property_count} home in {cityInfo?.name}
+            {cityInfo?.property_count} homes in {cityInfo?.name}
           </h2>
         </div>
       </div>

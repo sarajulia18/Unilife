@@ -1,36 +1,67 @@
-
-
 .property-card-box{
-   height: 100%;
    display:flex;
    flex-direction: column;
    justify-content: flex-end;
+   border-radius: 24px;
+   height:500px;
 }
-
+.property-rent{
+    font-size: 24px;
+}
 .blue-banner{
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #3A5295;
     color:#fff;
+    height: 60px;
+}
+.property-rent h5{
+   padding: 10px 170px 0 0;
+   font-size: 26px;
+}
+.room-count{
+    display: flex;
+    justify-content: space-evenly;
+    width:30%;
+    padding-top:12px;
 }
 .info-banner{
-    border: solid 1px black;
+    border: solid 1px lightgray;
     background-color: #fff;
-    display:flex;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     color:#000;
+    height:90px;
+}
+.top-info{
+    display: flex;
+    justify-content: space-around;
+}
+.top-info h4{
+    font-size: 20px;
+}
+.bottom-info{
+    display: flex;
+    justify-content: flex-start;
+    padding:0 25px 0 25px;
 }
 .view-banner{
-    border: solid 1px black;
+    border: solid 1px lightgrey;
     background-color: #fff;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     color:#000;
+    height: 50px;
+    padding-top: 8px;
+    border-radius: 0 0 24px 24px;
 }
-
-.property-card-box img{
-    padding-right: 0;
+.view-banner h3{
+    padding-left: 18px;
+    font-size: 24px;
+}
+.icons{
     width:25px;
     height:25px;
     margin-top:5px;
