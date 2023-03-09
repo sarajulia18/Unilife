@@ -1,5 +1,4 @@
 .home-card-container{
-    border: red 2px solid;
     width:400px;
    height: 250px;
    object-fit: cover;
@@ -8,9 +7,10 @@
    margin:15px;
 }
 .home-card-img-overlay{
-    border: blue 2px solid;
     border-radius: 15%;
     color:white;
+    height:300px;
+    width:400px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -20,11 +20,11 @@
     z-index:10;
 }
 
-.card-title{
+.home-card-title{
     font-size: 35px;
     font-weight: bold;
 }
-.card-text{
+.home-card-text{
     font-size: 15px;
 }
 

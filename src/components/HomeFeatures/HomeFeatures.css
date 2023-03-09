@@ -1,9 +1,26 @@
+.home-feature-container{
+margin-top: 10%;
+}
+.home-feature-row{
+    width:85%;
+}
 .left-feature{
 display: flex;
 flex-direction: column;
 justify-content: center;
-line-height: 20px;
+line-height: 30px;
+padding-bottom: 60px;
 }
 .right-feature img{
 height:400px;
+padding-left: 80px;
+}
+
+.home-feature-title{
+    font-weight: bold;
+    
+}
+
+.search-and-compare-btn{
+    margin: 25px 0 0 35%;
 }

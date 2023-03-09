@@ -7,31 +7,31 @@ import ManText from "../../assets/person.png";
 
 export default function HomeFeatures() {
   return (
-    <div className="container">
-      <div className="row m-auto">
+    <div className="home-feature-container">
+      <div className="row m-auto home-feature-row">
         <div className="col-12 col-md-6 left-feature">
           <div className="card">
             <div className="row card-body-one m-auto">
-              <div className="col">
+              <div className="col-4 home-feature-image">
                 <img src={HandHome} alt="Hand holding a house" />
               </div>
-              <div className="col">
-                <h5 className="card-title">Best selection</h5>
-                <p className="card-text">
+              <div className="col home-feature-description">
+                <h5 className="home-feature-title">Best selection</h5>
+                <p className="home-feature-text">
                   Best selection of student accommodations. Never been easier to
                   find a home that's right for you.
                 </p>
               </div>
             </div>
           </div>
-          <div className="card">
+          <div className="card mt-4">
             <div className="row card-body-two m-auto">
-              <div className="col">
+              <div className="col-4 home-feature-image">
                 <img src={Heart} alt="Heart" />
               </div>
-              <div className="col">
-                <h5 className="card-title">Your Favorite</h5>
-                <p className="card-text">
+              <div className="col home-feature-description">
+                <h5 className="home-feature-title">Your Favorite</h5>
+                <p className="home-feature-text mb-3">
                   Shortlist your favorite properties and send enquiries in one
                   click.
                 </p>

@@ -1,5 +1,4 @@
-.city-cards{
-    border: red 2px solid;
+.home-city-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

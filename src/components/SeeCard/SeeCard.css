@@ -1,4 +1,21 @@
 .see-all-city-card-container{
-    display:flex;
-    flex-wrap: wrap;
+    border: white;
+    width:290px;
+    height: 70px;
+    border-radius: 24px;
+    margin:8px;
+
+}
+.see-all-city-card-container:hover{
+    background-color: #3A5295;
+ 
+}
+.see-card-title{
+    color: #000;
+    font-weight:bold;
+    padding-top: 20px;
+    height:70px;
+}
+.see-card-title:hover{
+    color:#fff;
 }

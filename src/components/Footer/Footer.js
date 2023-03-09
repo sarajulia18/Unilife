@@ -16,9 +16,9 @@ export default function Footer() {
               Curious about new offerings? Sign up for our weekly newsletter and
               stay informed.
             </p>
-            <input type="search" className="newsletter" />
+            <input type="search" className="newsletter mt-2" />
           </div>
-          <div className="col-12 col-md-6 col-lg-6">
+          <div className="col-12 col-md-6 col-lg-6 blu-right">
             <h3>Let's Socialize</h3>
             <div className="social">
               <img src={Facebook} alt="Facebook Icon" />
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="blk-footer">
-        <div className="row m-auto">
+        <div className="row m-auto footer-row">
           <div className="col-12 col-md-6 col-lg-6">
             <ul className="footer-links">
               <li>About Us</li>

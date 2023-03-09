@@ -18,8 +18,13 @@
 .blu-left{
     padding: 0 10% 0 15%;
 }
+.blu-right{
+    padding-left: 10%;
+}
 .newsletter{
-    border-radius: 8%;
+    border-radius: 10px;
+    width:90%;
+    height:35px;
 }
 .social{
     display: flex;
@@ -41,6 +46,11 @@
     justify-content: space-around;
 }
 .footer-info{
+    margin-left: 33%;
+    width:12%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+}
+.footer-row{
+    padding-top: 50px;
 }

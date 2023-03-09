@@ -9,7 +9,7 @@ export default function SeeCard({ city }) {
       <Link to={`/citydetails/${city._id}`}>
         <div className="see-all-city-card-container">
           <div className="row m-auto text-center">
-            <h5 className="card-title col-12">{city.name}</h5>
+            <h5 className="see-card-title">{city.name}</h5>
           </div>
         </div>
       </Link>

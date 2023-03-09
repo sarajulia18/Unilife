@@ -5,7 +5,7 @@ import "./StudentSection.css";
 
 export default function StudentSection({ cityInfo }) {
   return (
-    <div className="container mt-5">
+    <div className="student-section-container mt-5">
       <div className="row m-auto">
         <div className="col-12 col-md-6 left-feature">
           <div className="card">

@@ -9,7 +9,7 @@ export default function Compare() {
     <div>
       <div className="compare-cards-main-container mt-5 mb-5">
         <div className="row m-auto mb-5">
-          <div className="col-12 text-center">
+          <div className="col-12 text-center mt-5">
             <h2>Compare all inclusive student homes.</h2>
           </div>
         </div>
@@ -19,7 +19,7 @@ export default function Compare() {
               <div className="card">
                 <div className="card-body">
                   <img src={Globe} alt="globe" />
-                  <h5 className="card-title">Search</h5>
+                  <h5 className="card-title mt-4">Search</h5>
                   <p className="card-text">
                     Find your dream home in the perfect area near your
                     university.
@@ -31,7 +31,7 @@ export default function Compare() {
               <div className="card">
                 <div className="card-body">
                   <img src={CheckBox} alt="Check Box" />
-                  <h5 className="card-title">Compare</h5>
+                  <h5 className="card-title mt-4">Compare</h5>
                   <p className="card-text">
                     Compare student accommodation to find the right home for
                     you.
@@ -43,7 +43,7 @@ export default function Compare() {
               <div className="card">
                 <div className="card-body">
                   <img src={RecieptPaper} alt="Reciept Paper" />
-                  <h5 className="card-title">Bills Included</h5>
+                  <h5 className="card-title mt-4">Bills Included</h5>
                   <p className="card-text">
                     Bills are included in all rent prices. No hidden fees.
                   </p>

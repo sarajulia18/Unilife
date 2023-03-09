@@ -26,7 +26,7 @@ export default function HomeSearch({ cities, cityInput, numRoomInput, e }) {
   return (
     <div className="home-search-container">
       <div className="home-search-box">
-        <div className="select-container">
+        <div className="home-select-container">
           <select
             onChange={changeCity}
             className="search-city col-lg-4 text-muted bg-light"
