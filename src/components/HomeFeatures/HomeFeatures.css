@@ -9,16 +9,15 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 line-height: 30px;
-padding-bottom: 60px;
 }
 .right-feature img{
+/* position: absolute; */
 height:400px;
 padding-left: 80px;
 }
 
 .home-feature-title{
     font-weight: bold;
-    
 }
 
 .search-and-compare-btn{

@@ -7,7 +7,7 @@ export default function StudentSection({ cityInfo }) {
   return (
     <div className="student-section-container mt-5 mb-5">
       <div className="row m-auto">
-        <div className="col-12 col-md-6 left-feature">
+        <div className="col-12 col-md-6 left-section">
           <div className="card">
             <div className="row card-body-one m-auto">
               <div className="col">
@@ -19,7 +19,7 @@ export default function StudentSection({ cityInfo }) {
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6 right-feature">
+        <div className="col-12 col-md-6 right-section">
           <img src={Students} alt="Group of Friends" />
         </div>
       </div>

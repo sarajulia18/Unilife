@@ -6,7 +6,7 @@ import InfoProperty from "../components/InfoProperty/InfoProperty";
 import DescProperty from "../components/DescProperty/DescProperty";
 
 export default function HomeDetail() {
-  const [properties, setProperties] = useState([]);
+  const [properties, setProperties] = useState();
   const { propertyId } = useParams();
   useEffect(() => {
     axios

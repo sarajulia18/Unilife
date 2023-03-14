@@ -1,5 +1,10 @@
 import React from "react";
+import ContactUs from "../components/ContactUs/ContactUs";
 
 export default function ContactUsModal() {
-  return <div>ContactUsModal</div>;
+  return (
+    <div>
+      <ContactUs />
+    </div>
+  );
 }

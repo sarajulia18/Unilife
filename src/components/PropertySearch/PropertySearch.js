@@ -4,25 +4,53 @@ import "./PropertySearch.css";
 export default function PropertySearch({
   bedroomCount,
   bathroomCount,
-  bedroomPrices,
+  propertyPrice,
   propertyType,
+  properties,
+  changeProperties,
 }) {
-  const [minBedrooms, setMinBedrooms] = useState();
-  const [minBathrooms, setMinBathrooms] = useState();
-  const [maxPrice, setMaxPrice] = useState();
-  const [HomeType, setHomeType] = useState();
+  const bedroomNums = [1, 2, 3, 4, 5, 6, 7, 8];
+  const bathroomNums = [1, 2, 3, 4, 5, 6];
+  const filteredPrice = [
+    400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600, 3000,
+  ];
+  const type = ["Apartment", "Semi-Detached", "Detached"];
+
   const changeMinBedrooms = (e) => {
-    setMinBedrooms(e.target.value);
+    const minBeds = e.target.value;
+    const filteredProperties = properties?.filter(
+      (property) => property?.bedroom_count >= minBeds
+    );
+    changeProperties(filteredProperties);
   };
   const changeMinBathrooms = (e) => {
-    setMinBathrooms(e.target.value);
+    const minBaths = e.target.value;
+
+    const filteredProperties = properties?.filter(
+      (property) => property?.bathroom_count >= minBaths
+    );
+    changeProperties(filteredProperties);
   };
   const changeMaxPrice = (e) => {
-    setMaxPrice(e.target.value);
+    const maxPrice = e.target.value;
+    const filteredProperties = properties?.filter(
+      (property) => property?.rent >= maxPrice
+    );
+    changeProperties(filteredProperties);
   };
   const changeHomeType = (e) => {
-    setHomeType(e.target.value);
+    const homeType = e.target.value;
+    const filteredProperties = properties?.filter(
+      (property) => property?.property_type >= homeType
+    );
+    changeProperties(filteredProperties);
   };
+  const resetFilteredProperties = (e) => {
+    const reset = e.target.value;
+    const allProperties = properties?.filter((property) => property >= reset);
+    changeProperties(allProperties);
+  };
+
   return (
     <div className="property-search-container">
       <div className="row m-auto property-search-box">
@@ -33,8 +61,8 @@ export default function PropertySearch({
             className="col-2 min-bedroom text-muted bg-light"
           >
             <option>{bedroomCount}</option>
-            {bedroomCount?.map((properties) => (
-              <option value={properties._id}>{properties.bedroom_count}</option>
+            {bedroomNums?.map((number) => (
+              <option value={number}>{number}</option>
             ))}
           </select>
         </div>
@@ -45,7 +73,9 @@ export default function PropertySearch({
             className="min-bathroom text-muted bg-light"
           >
             <option>{bathroomCount}</option>
-            {}
+            {bathroomNums?.map((number) => (
+              <option value={number}>{number}</option>
+            ))}
           </select>
         </div>
         <div className="col-2 select-container max-price">
@@ -54,10 +84,10 @@ export default function PropertySearch({
             onChange={changeMaxPrice}
             className="max-price text-muted bg-light"
           >
-            <option>{bedroomPrices}</option>
-            {/* {cities?.map((properties) => (
-              <option value={properties._id}>{properties.name}</option>
-            ))} */}
+            <option>{propertyPrice}</option>
+            {filteredPrice?.map((number) => (
+              <option value={number}>{number}</option>
+            ))}
           </select>
         </div>
         <div className="col-2 select-container home-type">
@@ -67,11 +97,18 @@ export default function PropertySearch({
             className="home-type text-muted bg-light"
           >
             <option>{propertyType}</option>
-            {/* {cities?.map((properties) => (
-              <option value={properties._id}>{properties.name}</option>
-            ))} */}
+            {type?.map((property_type) => (
+              <option value={property_type}>{property_type}</option>
+            ))}
           </select>
         </div>
+        <button
+          type="button"
+          className="property-search-btn"
+          onClick={resetFilteredProperties}
+        >
+          Reset
+        </button>
       </div>
     </div>
   );

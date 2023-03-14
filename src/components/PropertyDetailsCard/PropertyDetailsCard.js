@@ -41,7 +41,11 @@ export default function PropertyDetailsCard({ properties }) {
             </div>
             <div className="bottom-info">
               <img src={Pin} alt="Address Pin" className="icons" />
-              <p>{properties?.address?.street?.city?.postcode}</p>
+              <p>
+                {properties?.address?.street}
+                {properties?.address?.city}
+                {properties?.address?.postcode}
+              </p>
             </div>
           </div>
           <div className="view-banner">

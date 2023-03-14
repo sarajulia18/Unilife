@@ -6,6 +6,9 @@ export default function HomeSearch({ cities, cityInput, numRoomInput, e }) {
   const [cityId, setCityId] = useState();
   const [numBedrooms, setNumBedrooms] = useState();
   const navigate = useNavigate();
+
+  const bedroomFilter = [1, 2, 3, 4, 5, 6, 7, 8];
+
   const changeCity = (e) => {
     setCityId(e.target.value);
   };
@@ -41,7 +44,9 @@ export default function HomeSearch({ cities, cityInput, numRoomInput, e }) {
             className="num-bedroom col-lg-4 text-muted bg-light"
           >
             <option>{numRoomInput}</option>
-            {}
+            {bedroomFilter?.map((number) => (
+              <option value={number}>{number}</option>
+            ))}
           </select>
           <button
             type="button"

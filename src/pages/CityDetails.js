@@ -17,6 +17,7 @@ export default function CityDetails() {
     axios
       .post(`https://unilife-server.herokuapp.com/properties/filter`, query)
       .then((res) => {
+        console.log(res.data.response);
         setProperties(res.data.response);
       })
       .catch((err) => console.log(err));
@@ -37,11 +38,12 @@ export default function CityDetails() {
         }
       />
       <PropertySearch
-        properites={properties}
-        bedroomInput={"Any bedroom"}
-        bathroomInput={"Any bathroom"}
-        priceInput={"Any price"}
-        typeInput={"Any type"}
+        properties={properties}
+        bedroomCount={"Any bedroom"}
+        bathroomCount={"Any bathroom"}
+        propertyPrice={"Any price"}
+        propertyType={"Any type"}
+        changeProperties={setProperties}
       />
       <PropertyCards
         properties={properties}

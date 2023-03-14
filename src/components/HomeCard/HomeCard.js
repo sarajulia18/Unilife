@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "./HomeCard.css";
 
 export default function Card({ city }) {
-  console.log(city);
   const imgStyle = {
     backgroundImage: `url(${city.image_url})`,
     backgroundRepeat: "no-repeat",
