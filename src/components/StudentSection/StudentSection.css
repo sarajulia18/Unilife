@@ -1,8 +1,10 @@
 .left-section{
-    padding: 0 95px 0 95px;
+    padding: 30px 95px;
+    display: flex;
 }
 .right-section img{
     padding:0;
+    width:80%;
     border-radius: 12%;
 }
 .student-section-card-title{

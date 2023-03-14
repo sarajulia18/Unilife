@@ -2,10 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 5px 10px;
 }
 .city-card-title{
     display: flex;
     justify-content: center;
     align-items: center;
     width:100%
+}
+.see-all-btn{
+    background-color: #3A5295;
+    color: #fff;
+    width:80%;
+    padding: 16px 32px;
+    font-size:20px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
 }

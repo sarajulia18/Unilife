@@ -20,12 +20,7 @@ export default function CityHomeCards({ cities }) {
         ))}
       </div>
       <div className="see-all-cities-btn mt-4">
-        <Link
-          type="button"
-          className="btn btn-primary"
-          data-bs-toggle="button"
-          to="/seeallcities"
-        >
+        <Link type="button" className="see-all-btn" to="/seeallcities">
           See All Cities
         </Link>
       </div>
