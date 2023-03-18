@@ -8,6 +8,7 @@
     top: 0px;
     position:relative;
     z-index: -40px;
+ 
 }
 .transparent-overlay{
     position:absolute;
@@ -45,4 +46,17 @@ font-size: 24px;
 line-height: 25px;
 text-align: center;
 color: #FFF;
+}
+
+@media(max-width:1100px){
+    .overlay-title{
+        width:50%;
+        left: 25%;
+    }
+}
+@media(max-width:800px){
+    .overlay-title{width:60%;
+        left:20%;}
+    .overlay-text{width:70%;
+    left:15%;}
 }

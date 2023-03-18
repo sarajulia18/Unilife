@@ -7,6 +7,7 @@ import DescProperty from "../components/DescProperty/DescProperty";
 
 export default function HomeDetail() {
   const [properties, setProperties] = useState();
+
   const { propertyId } = useParams();
   useEffect(() => {
     axios

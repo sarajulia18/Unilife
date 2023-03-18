@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-
+import { Link, useNavigate } from "react-router-dom";
 import "./InfoProperty.css";
+
 import Couch from "../../assets/couch-icon.png";
 import Bathtub from "../../assets/bathtub-icon.png";
 import Heart from "../../assets/small-heart.png";
@@ -8,26 +9,25 @@ import Arrow from "../../assets/back-arrow.png";
 import CityDetails from "../../pages/CityDetails";
 
 export default function InfoProperty({ properties }) {
-  const propertySelection = properties.images.slice(1, 4);
-  // const backToCities = (e) => (
-  //   <CityDetails />
-  // )}
+  const propertySelection = properties?.images.slice(1, 4);
+  const navigate = useNavigate();
 
   return (
     <div className="top-container mt-5 mb-5">
       <div className="row row-cols-2 pics-and-all-info">
-        {/* <div className="back-to-search">
-          <img src={Arrow} alt="back arrow" />
-          <button onclick={backToCities}>
-            Back to Search
-          </button>
-        </div> */}
         <div className="row full-left-info">
+          <div>
+            <img src={Arrow} alt="back arrow" />
+            <button className="back-to-search" onClick={() => navigate(-1)}>
+              Back to Search
+            </button>
+          </div>
+
           <div className="hero-image">
             <img src={properties?.images[0]} alt="main selection" />
           </div>
           <div className="thumbnail-image">
-            {propertySelection.map((imageSrc) => (
+            {propertySelection?.map((imageSrc) => (
               <img src={imageSrc} alt="thumbnails" />
             ))}
           </div>
@@ -69,13 +69,17 @@ export default function InfoProperty({ properties }) {
             </div>
           </div>
           <div className="row both-btns">
-            <button className=" col shortlist-btn">
+            <button className="col shortlist-btn">
               <img src={Heart} alt="small heart" />
               <h4>Shortlist</h4>
             </button>
-            <button className="col book-viewing-btn">
+            <Link
+              to={`/bookviewingmodal?street=${properties?.address.street}&city=${properties?.address.city}&postcode=${properties?.address.postcode}`}
+              type="button"
+              className="col book-viewing-btn"
+            >
               <h4>Book Viewing</h4>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

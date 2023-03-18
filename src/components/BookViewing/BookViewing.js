@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+
 import "./BookViewing.css";
 import Viewing from "../../assets/add-view-icon.png";
 
-export default function BookViewing({ properties }) {
+export default function BookViewing({ properties, address }) {
   const [nameInput, setNameInput] = useState("");
   const [emailInput, setEmailInput] = useState("");
   const [phoneInput, setPhoneInput] = useState("");
@@ -23,17 +24,14 @@ export default function BookViewing({ properties }) {
   function handleSubmit(e) {
     e.preventDefault();
   }
-
+  console.log("book viewing");
+  console.log(properties);
   return (
     <div className="full-form">
       <div className="top-contact">
         <div className="top-text">
           <h1>Book a Viewing</h1>
-          <p>
-            {properties?.address?.street}
-            {properties?.address?.city}
-            {properties?.address?.postcode}
-          </p>
+          <p>{address.get("city")}</p>
         </div>
         <div className="top-icon">
           <img src={Viewing} alt="home with plus sign icon" />

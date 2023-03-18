@@ -1,6 +1,11 @@
 .top-container{
-    border: red 2px solid;
     padding:80px;
+}
+.back-to-search{
+    background-color: #fff;
+    border: none;
+    color:#000;
+    padding: 10px;
 }
 .hero-image img{
     max-width: 100%;
@@ -31,18 +36,17 @@
     height:60px;
 } */
 .full-property-address{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
     border-bottom: grey solid 1px;
 }
 .full-property-address h2{
-    border: green solid 3px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
     font-size: 50px;
 }
 
 .right-top-info{
-    border: red solid 1px;
     display: flex;
     justify-content: center;
     width: 80%;
@@ -50,7 +54,6 @@
 
 .right-bottom-info{
     display: flex;
-    border: blue solid 1px;
     width: 80%;
 }
 .right-info-label{
@@ -83,6 +86,7 @@
     color:#000;
     border-radius: 12px;
     display: flex;
+    text-align: center;
 }
 
 .book-viewing-btn{
@@ -90,5 +94,5 @@
     color:#fff;
     font-weight: bold;
     border-radius: 12px;;
-    padding: 3px;
+    text-align: center;
 }
